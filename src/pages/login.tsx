@@ -6,7 +6,9 @@ import { useSession } from "../contexts/useSession";
 // Components
 import { Layout } from "../components/templates/Layout";
 
-export default function Home() {
+export default function Login() {
+  const { signIn } = useSession();
+
   return (
     <Layout>
       <Head>

@@ -40,7 +40,7 @@ export function SessionProvider({ children }: IProviderProps) {
       try {
       } catch (error) {
       } finally {
-        setIsInitialized(false);
+        setTimeout(() => setIsInitialized(false), 1000);
       }
     }
     loadStoragedData();
